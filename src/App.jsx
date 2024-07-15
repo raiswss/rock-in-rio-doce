@@ -2,12 +2,18 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Cabecalho from './componente/cabecalho'
 
 function App() {
   const [count, setCount] = useState(0)
-
+  let gato ={
+    nome: 'cleitinho',
+    profissao: 'gato'
+  }
   return (
     <>
+    <Cabecalho titulo ={'titulo'} subTitulo ={'titulo 2'}></Cabecalho>
+    <Cabecalho titulo ={'primeiro Parâmetro'} subTitulo ={'segundo Parâmetro'}></Cabecalho>
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
